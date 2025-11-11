@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full lg:px-24 md:px-12 py-10 px-4">
+  <div class="w-full 2xl:px-24 md:px-12 py-10 px-4">
     <!-- Loading spinner -->
     <div v-if="loading" class="flex flex-col justify-center items-center h-64">
       <svg class="animate-spin h-12 w-12 text-yellow-500 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -11,12 +11,12 @@
     <!-- Articles sections -->
     <div v-else>
       <h1 class="pb-5 md:text-3xl text-2xl bayon-regular font-bold border-b-2 text-black border-gray-900">អត្ថបទក្នុងប្រភេទ៖ Economics</h1>
-      <div class="flex flex-wrap gap-6 mt-8">
+      <div class="flex flex-wrap  2xl:gap-6 xl:gap-5 lg:gap-4 max-lg:gap-7 max-md:gap-6 sm:gap-5 mt-8">
         <router-link
           v-for="(article , idx) in Article.slice(0,3)"
           :key="article.id"
           :to="`/article/${article.slug}`"
-          class="lg:w-[32%] md:w-[48%] w-full group relative h-[300px] rounded-md overflow-hidden cursor-pointer"
+          class="lg:w-[32%] md:w-[48%] w-full group relative h-[300px] rounded-md shadow-sm shadow-black overflow-hidden cursor-pointer"
           :data-aos="idx % 2 === 0 ? 'fade-up' : 'fade-down'"
           >
           <img class="w-full group-hover:scale-105 transition-all duration-300 h-full" :src="article.thumbnail" alt="">
@@ -30,12 +30,12 @@
       </div>
 
       <h1 class="py-5 pt-8 md:text-3xl text-2xl bayon-regular font-bold border-b-2 text-black border-gray-900">អត្ថបទក្នុងប្រភេទ៖ Technology</h1>
-      <div class="flex flex-wrap gap-6 mt-8">
+      <div class="flex flex-wrap  2xl:gap-6 xl:gap-5 lg:gap-4 max-lg:gap-7 max-md:gap-6 sm:gap-5 mt-8">
         <router-link
           v-for="(article , idx) in Article.slice(3,6)"
           :key="article.id"
           :to="`/article/${article.slug}`"
-          class="lg:w-[32%] md:w-[48%] w-full group relative h-[300px] rounded-md overflow-hidden cursor-pointer"
+          class="lg:w-[32%] md:w-[48%] w-full group relative h-[300px] rounded-md shadow-sm shadow-black overflow-hidden cursor-pointer"
           :data-aos="idx % 2 === 0 ? 'fade-up' : 'fade-down'"
         >
           <img class="w-full group-hover:scale-105 transition-all duration-300 h-full" :src="article.thumbnail" alt="">
@@ -50,12 +50,12 @@
 
       <!-- Repeat the same for Culture, Law, Foreign Policy -->
       <h1 class="py-5 pt-8 md:text-3xl text-2xl bayon-regular font-bold border-b-2 text-black border-gray-900">អត្ថបទក្នុងប្រភេទ៖ Culture</h1>
-      <div class="flex flex-wrap gap-6 mt-8">
+      <div class="flex flex-wrap  2xl:gap-6 xl:gap-5 lg:gap-4 max-lg:gap-7 max-md:gap-6 sm:gap-5 mt-8">
         <router-link
           v-for="(article , idx) in Article.slice(6,9)"
           :key="article.id"
           :to="`/article/${article.slug}`"
-          class="lg:w-[32%] md:w-[48%] w-full group relative h-[300px] rounded-md overflow-hidden cursor-pointer"
+          class="lg:w-[32%] md:w-[48%] w-full group relative h-[300px] rounded-md shadow-sm shadow-black overflow-hidden cursor-pointer"
           :data-aos="idx % 2 === 0 ? 'fade-up' : 'fade-down'"
         >
           <img class="w-full group-hover:scale-105 transition-all duration-300 h-full" :src="article.thumbnail" alt="">
@@ -69,12 +69,12 @@
       </div>
 
       <h1 class="py-5 pt-8 md:text-3xl text-2xl bayon-regular font-bold border-b-2 text-black border-gray-900">អត្ថបទក្នុងប្រភេទ៖ Law</h1>
-      <div class="flex flex-wrap gap-6 mt-8">
+      <div class="flex flex-wrap  2xl:gap-6 xl:gap-5 lg:gap-4 max-lg:gap-7 max-md:gap-6 sm:gap-5 mt-8">
         <router-link
           v-for="(article , idx) in Article.slice(9,12)"
           :key="article.id"
           :to="`/article/${article.slug}`"
-          class="lg:w-[32%] md:w-[48%] w-full group relative h-[300px] rounded-md overflow-hidden cursor-pointer"
+          class="lg:w-[32%] md:w-[48%] w-full group relative h-[300px] rounded-md shadow-sm shadow-black overflow-hidden cursor-pointer"
           :data-aos="idx % 2 === 0 ? 'fade-up' : 'fade-down'"
         >
           <img class="w-full group-hover:scale-105 transition-all duration-300 h-full" :src="article.thumbnail" alt="">
@@ -88,12 +88,12 @@
       </div>
 
       <h1 class="py-5 pt-8 md:text-3xl text-2xl bayon-regular font-bold border-b-2 text-black border-gray-900">អត្ថបទក្នុងប្រភេទ៖ Foreign Policy</h1>
-      <div class="flex flex-wrap gap-6 mt-8">
+      <div class="flex flex-wrap  2xl:gap-6 xl:gap-5 lg:gap-4 max-lg:gap-7 max-md:gap-6 sm:gap-5 mt-8">
         <router-link
           v-for="(article , idx) in Article.slice(12,15)"
           :key="article.id"
           :to="`/article/${article.slug}`"
-          class="lg:w-[32%] md:w-[48%] w-full group relative h-[300px] rounded-md overflow-hidden cursor-pointer"
+          class="lg:w-[32%] md:w-[48%] w-full group relative h-[300px] rounded-md shadow-sm shadow-black overflow-hidden cursor-pointer"
           :data-aos="idx % 2 === 0 ? 'fade-up' : 'fade-down'"
         >
           <img class="w-full group-hover:scale-105 transition-all duration-300 h-full" :src="article.thumbnail" alt="">

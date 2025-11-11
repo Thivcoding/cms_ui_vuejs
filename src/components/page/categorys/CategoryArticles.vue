@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:px-24 md:px-12 py-10 px-4">
+  <div class="2xl:px-24 md:px-12 py-10 px-4">
     <!-- Page title -->
     <h2 class="md:text-3xl text-2xl text-black font-bold mb-6 bayon-regular">
       អត្ថបទក្នុងប្រភេទ៖ {{ categoryName }}
@@ -18,12 +18,12 @@
     <p v-else-if="error" class="text-red-500 bayon-regular">{{ error }}</p>
 
     <!-- Articles list -->
-    <div v-else-if="articles.length" class="flex flex-wrap gap-6">
+    <div v-else-if="articles.length" class="flex flex-wrap 2xl:gap-6 xl:gap-5 lg:gap-4 max-lg:gap-7 max-md:gap-6 sm:gap-5">
       <router-link
         v-for="article in articles"
         :key="article.id"
         :to="`/article/${article.slug}`"
-        class="lg:w-[32%] md:w-[48%] w-full group relative h-[300px] rounded-md overflow-hidden cursor-pointer"
+        class="lg:w-[32%] md:w-[48%] w-full group relative h-[300px] rounded-md shadow-sm shadow-black overflow-hidden cursor-pointer"
         data-aos="zoom-in"
       >
         <img

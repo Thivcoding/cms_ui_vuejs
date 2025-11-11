@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-[#1e3a8a] sticky top-0 z-50 text-white flex justify-between items-center lg:px-24 md:px-12 px-4 py-5 shadow">
+  <nav class="bg-[#1e3a8a] sticky top-0 z-50 text-white flex justify-between items-center 2xl:px-24 md:px-12 px-4 py-5 shadow">
     <!-- Logo -->
     <div class="flex items-center space-x-3">
       <h1 class="text-2xl font-bold">HOK VANTHIV</h1>
@@ -70,7 +70,7 @@
       >
         <div class="flex items-center justify-between mb-6">
           <h2 class="text-xl font-bold flex items-center gap-2">
-            <i class="bi bi-menu-button-wide"></i> មាតិកា
+            <i class="bi bi-menu-button-wide"></i> HOK VANTHIV
           </h2>
           <button @click="toggleMenu" class="text-2xl focus:outline-none hover:text-yellow-300">
             <i class="bi bi-x-lg"></i>
@@ -143,10 +143,10 @@ const isActive = (path) => route.path === path;
 const categories = [
   { id: 1, name: "ទំព័រដើម", path: "/" },
   { id: 2, name: "សេដ្ឋកិច្ច", path: "/category/1" },
-  { id: 3, name: "នយោបាយ", path: "/category/2" },
-  { id: 4, name: "បច្ចេកវិទ្យា", path: "/category/3" },
-  { id: 5, name: "វប្បធម៌", path: "/category/4" },
-  { id: 6, name: "ច្បាប់", path: "/category/5" },
+  { id: 3, name: "បច្ចេកវិទ្យា", path: "/category/2" },
+  { id: 4, name: "វប្បធម៌", path: "/category/3" },
+  { id: 5, name: "ច្បាប់", path: "/category/4" },
+  { id: 6, name: "នយោបាយ", path: "/category/5" },
   { id: 7, name: "អំពីយើង", path: "/aboutUs" },
 ];
 

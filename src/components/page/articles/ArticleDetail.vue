@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:px-24 md:px-12 py-10 px-4">
+  <div class="2xl:px-24 md:px-12 py-10 px-4">
     <!-- Article detail -->
     <div v-if="loading" class="flex flex-col justify-center items-center h-64">
       <p>កំពុងបង្ហាញទិន្នន័យ...</p>
@@ -60,7 +60,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import axios from 'axios'
 import { useRoute } from 'vue-router'
 
@@ -127,4 +127,14 @@ const addComment = async () => {
 onMounted(() => {
   fetchArticle()
 })
+
+// Watch route slug → reload data when it changes
+watch(
+  () => route.params.slug,
+  (newSlug, oldSlug) => {
+    if (newSlug !== oldSlug) {
+      fetchArticle()
+    }
+  }
+)
 </script>
