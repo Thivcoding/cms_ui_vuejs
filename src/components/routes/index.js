@@ -16,9 +16,9 @@ const routes = [
         redirect: '/' 
     },
      {
-        path: '/article',
+        path: '/articles',
         component: ArticleList,
-        name: 'article'
+        name: 'articles'
     },
     {
         path: '/article/:slug',

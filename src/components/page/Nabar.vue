@@ -142,12 +142,13 @@ const isActive = (path) => route.path === path;
 // Categories menu
 const categories = [
   { id: 1, name: "ទំព័រដើម", path: "/" },
-  { id: 2, name: "សេដ្ឋកិច្ច", path: "/category/1" },
-  { id: 3, name: "បច្ចេកវិទ្យា", path: "/category/2" },
-  { id: 4, name: "វប្បធម៌", path: "/category/3" },
-  { id: 5, name: "ច្បាប់", path: "/category/4" },
-  { id: 6, name: "នយោបាយ", path: "/category/5" },
-  { id: 7, name: "អំពីយើង", path: "/aboutUs" },
+  { id: 2, name: "អត្ថបទ", path: "/articles" },
+  { id: 3, name: "សេដ្ឋកិច្ច", path: "/category/1" },
+  { id: 4, name: "បច្ចេកវិទ្យា", path: "/category/2" },
+  { id: 5, name: "វប្បធម៌", path: "/category/3" },
+  { id: 6, name: "ច្បាប់", path: "/category/4" },
+  { id: 7, name: "នយោបាយ", path: "/category/5" },
+  { id: 8, name: "អំពីយើង", path: "/aboutUs" },
 ];
 
 // Fetch all articles
